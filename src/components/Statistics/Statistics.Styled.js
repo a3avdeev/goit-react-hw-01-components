@@ -6,7 +6,7 @@ export const StatisticsWrapper = styled.section`
   align-items: center;
   justify-content: center;
   width: 500px;
-  margin: 20px auto;
+  margin: 30px auto;
   border: 1px solid grey;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);

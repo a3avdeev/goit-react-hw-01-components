@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {StatisticsWrapper, StatisticsTitle, StatisticsList} from './StatisticsStyled'
+import {StatisticsWrapper, StatisticsTitle, StatisticsList} from './Statistics.Styled'
 import {getRandomHexColor} from './getRandomColor'
 
 export const Statistics = ({ title, stats }) => {
@@ -10,7 +10,7 @@ export const Statistics = ({ title, stats }) => {
             <StatisticsList>
                 {
                     stats.map(el => (
-                        <li key={el.id} style={bgColor}>
+                        <li key={el.id} style={{backgroundColor: getRandomHexColor()}}>
                             <span>{el.label}</span>
                             <span>{el.percentage}%</span>
                         </li>
@@ -29,7 +29,3 @@ Statistics.propTypes = {
         percentage: PropTypes.number.isRequired
     }))
 };
-
-const bgColor = {
-    backgroundColor: getRandomHexColor(),
-}
