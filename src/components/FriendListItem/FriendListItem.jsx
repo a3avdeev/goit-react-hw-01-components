@@ -4,7 +4,7 @@ import {FriendListItemThumb} from './FriendListItem.Styled'
 export const FriendListItem = ({ isOnline, avatar, name }) => {
     return (
         <FriendListItemThumb>
-            <span>{isOnline ? 'Green' : 'Red'}</span>
+            <span style={{backgroundColor: isOnline ? 'Green' : 'Red'}}></span>
             <img src={avatar} alt={name} width="48" />
             <p>{name}</p>
         </FriendListItemThumb>

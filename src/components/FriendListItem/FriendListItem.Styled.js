@@ -17,8 +17,6 @@ export const FriendListItemThumb = styled.li`
     height: 22px;
     margin-left: 20px;
     border-radius: 50%;
-    background-color: ${props =>
-      props.isOnline === 'Green' ? 'Green' : 'Red'};
   }
 
   & img {
